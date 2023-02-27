@@ -1,0 +1,4 @@
+#!/bin/bash
+read -p "Introduce el nombre del archivo de salida: " filename
+npx truffle exec /BCDA_Dapp_Asignatura_Lite_2022_sepolia/truffle/scripts/mil_transacciones_guardas.js > $filename.txt
+

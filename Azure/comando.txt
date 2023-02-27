@@ -1,0 +1,5 @@
+scp -i prueba_key.pem -r BCDA_Dapp_Asignatura_Lite_2022_arbitrum_sin_modules/ azureuser@20.254.92.155:/home/azureuser/pagin_web
+
+ssh azureuser@20.254.92.155 -i prueba_key.pem 
+
+npm install en cada carpeta

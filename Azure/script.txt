@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#################################
+#FALTA COMPROBARLO BIEN
+#################################
+
+# Ejecutar npm start en /home/pablo en el puerto 3000
+cd /home/pablo/Desktop/asignatura_little/BCDA_Dapp_Asignatura_Lite_2022_sepolia/dapp
+
+npm start -- --port 3000 &
+
+# Esperar unos segundos para asegurarnos de que el primer proceso está en marcha
+sleep 5
+
+# Ejecutar npm start en /home/luis en el puerto 3001
+cd /home/pablo/Desktop/asignatura_little/BCDA_Dapp_Asignatura_Lite_2022_arbitrum/dapp
+npm start -- --port 3001 &
+
+echo "Los procesos de npm start han sido iniciados."
+

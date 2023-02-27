@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Buscar los procesos de npm start que se están ejecutando
+process_pablo=$(pgrep -f "npm start --port 3000")
+process_luis=$(pgrep -f "npm start --port 3001")
+
+# Detener los procesos de npm start
+if [ -n "$process_pablo" ]; then
+    echo "Deteniendo el proceso de npm start en /home/pablo..."
+    kill $process_pablo
+fi
+
+if [ -n "$process_luis" ]; then
+    echo "Deteniendo el proceso de npm start en /home/luis..."
+    kill $process_luis
+fi
+
+echo "Los procesos de npm start han sido detenidos."
+
